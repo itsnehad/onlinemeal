@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- website by neha dhok  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>food dilivery and services|onlinemeals.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- pixels.com and pixabay website for images in website -->
+<section id="navbar">
+    <div id="logo">
+        <img src="logo.png" alt="onlinemeal.com">
+    </div>
+    <ul>
+        <li class="item">home</li>
+        <li class="item"onclick="scrollToSection('servi')">services</li>
+        <li class="item"onclick="scrollToSection('contacts')">contact us</li>
+        <li class="item"onclick="scrollToSection('client')">clients</li>
+    </ul>
+</section>
+<section id="home">
+    <h1 class="h1primary "id="welcome">welcome!! to myonlinemeal...</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora voluptas, saepe dignissimoing elit. Voluptatem eligendi dignissimos perferendis minima repellendus laudantium, aliquid animi nostrum dolore magni?</p>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, minima. Quae, iusto natus! Animi, maxime voluptatem repellendus debitis nulla porro?</p> -->
+    <form action="search.html" id="searchbar">
+    <input type="text" name="query" placeholder="search your favourite food here......"id="searches">
+    </form>
+    <button class="btn">order now</button>
+</section>
+<section class="services container"Id="servi">
+    <h1 class="h1primary">our services</h1>
+    <div id="services">
+        <div class="box">
+            <img src="burger.jpg" alt="error">
+            <h2 class="h1secondary">food ordering</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officia eveniet sint aut excepturi tempora magnam sunt non eligendi voluptatibus? Minus deleniti quisquam quod laboriosam facilis facere, minima vero modi reiciendis, a placeat sequi! A dolorum hic quibusdam in modi!</p>
+        </div>
+        <div class="box">
+            <img src="plater.jpg" alt="error">
+            <h2 class="h1secondary">food catering</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officia eveniet sint aut excepturi tempora magnam sunt non eligendi voluptatibus? Minus deleniti quisquam quod laboriosam facilis facere, minima vero modi reiciendis, a placeat sequi! A dolorum hic quibusdam in modi!</p>
+        </div>
+        <div class="box">
+            <img src="1.jpg" alt="error">
+            <h2 class="h1secondary">bulk ordering</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus officia eveniet sint aut excepturi tempora magnam sunt non eligendi voluptatibus? Minus deleniti quisquam quod laboriosam facilis facere, minima vero modi reiciendis, a placeat sequi! A dolorum hic quibusdam `in modi!</p>
+        </div>
+    </div>
+</section>
+<section id="contacts">
+    <div class="contact-container">
+        <h1 class="clientheading h1primary">Contact Us</h1>
+        <div id="contact">
+            <ul>
+                <li>Email: nehadhok@gmail.com</li>
+                <li>Phone: +91 7385xxxxxx</li>
+                <li>Address:street 01152,swanand niwas ,karmavir nagar</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="client" id="client">
+    <h1 class="clientheading h1primary">Our clients</h1>
+    <div class="items">
+        <div class="clientitems">
+            <img src="google.webp" alt="">
+        </div>
+        <div class="clientitems">
+            <img src="insta.webp" alt="">
+        </div>
+        <div class="clientitems">
+            <img src="youtube.webp" alt="">
+        </div>
+        <div class="clientitems">
+            <img src="penguin.webp" alt="">
+        </div>
+        <div class="clientitems">
+            <img src="photoes.webp" alt="">
+        </div>
+        
+    </div>
+</section>
+<script>
+    let name=prompt("enter your name->")
+    let div=document.getElementById("welcome");
+    div.innerText=("Welcome!!"+ name +" to myonlinemeal...");
+    console.log("hello  ")
+function scrollToSection(sectionId) {
+    console.log("Scrolling to section:", sectionId);
+    var section = document.getElementById(sectionId);
+
+    if (section) {
+        window.scrollTo({
+            top: section.offsetTop,
+            behavior: 'smooth'
+        });
+    } else {
+        console.log("Section not found:", sectionId);
+    }
+}
+
+
+</script>
+
+</body>
+</html>
